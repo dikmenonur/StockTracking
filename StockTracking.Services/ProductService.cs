@@ -11,11 +11,11 @@ namespace Business.Services
 {
     public class ProductService : IProductService
     {
-        private readonly ProductDataSource _blogRepository;
+        private readonly IProductDataSource _productDataSource;
 
-        public ProductService(ProductDataSource blogRepository)
+        public ProductService(IProductDataSource productDataSource)
         {
-            _blogRepository = blogRepository;
+            _productDataSource = productDataSource;
         }
 
         public void Add(Product article)

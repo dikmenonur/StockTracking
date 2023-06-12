@@ -53,7 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\ProductConfiguration.cs" />
     <Compile Include="Entity\Customer.cs" />
+    <Compile Include="Entity\Enums.cs" />
     <Compile Include="Entity\Product.cs" />
     <Compile Include="Entity\StockProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
