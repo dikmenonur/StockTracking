@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracking.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracking.Core", "StockTracking.Services\StockTracking.Core.csproj", "{45AA11F0-EB55-4D7F-B0A3-8386632D6B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracking.Services", "StockTracking.Services\StockTracking.Services.csproj", "{767E1E44-6B54-4760-B711-54A6D6E89770}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{45AA11F0-EB55-4D7F-B0A3-8386632D6B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45AA11F0-EB55-4D7F-B0A3-8386632D6B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45AA11F0-EB55-4D7F-B0A3-8386632D6B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767E1E44-6B54-4760-B711-54A6D6E89770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767E1E44-6B54-4760-B711-54A6D6E89770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767E1E44-6B54-4760-B711-54A6D6E89770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767E1E44-6B54-4760-B711-54A6D6E89770}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

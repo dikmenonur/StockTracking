@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace StockTracking.Core.Entity
 {
-    public class Enums
+    public enum StockType
     {
-        public enum StockType
-        {
-            None = 0,
-            InStock = 1,
-            OutStock = 2
-        }
+        None = 0,
+        StockIn = 1,
+        StockOut = 2,
+        OutOfSales= 3,
     }
 }

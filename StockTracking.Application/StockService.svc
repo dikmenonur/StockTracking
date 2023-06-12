@@ -1,1 +1,4 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="StockTracking.Application.StockService" CodeBehind="StockService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="StockTracking.Application.StockService"
+        Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf"
+    CodeBehind="StockService.svc.cs" %>
