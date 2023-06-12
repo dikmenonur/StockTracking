@@ -1,8 +1,7 @@
 ﻿using Autofac;
 using Business.Services;
 using Business.Services.Contracts;
-using Data.Core.Infrastructure;
-using Data.Core.Repositories;
+using StockTracking.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,14 +21,11 @@ namespace WCF.DependencyInjection.Web
 
             // register services
             
-            builder.RegisterType<BlogService>().As<IBlogService>();
-            builder.RegisterType<ArticleService>().As<IArticleService>();
+            builder.RegisterType<ProductService>().As<IProductService>();
 
             // register repositories and UnitOfWork
-            builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
-            builder.RegisterType<DbFactory>().As<IDbFactory>();
-            builder.RegisterType<ArticleRepository>().As<IArticleRepository>();
-            builder.RegisterType<BlogRepository>().As<IBlogRepository>();
+            builder.RegisterType<ProductDataSource>().As<IProductDataSource>();
+            builder.RegisterType<ProductDbContext>();
 
             // build container
             return builder.Build();

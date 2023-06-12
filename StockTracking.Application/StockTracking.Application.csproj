@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="StockService.svc" />
+    <Content Include="ProductService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +118,10 @@
     <ProjectReference Include="..\StockTracking.Services\StockTracking.Core.csproj">
       <Project>{45AA11F0-EB55-4D7F-B0A3-8386632D6B3B}</Project>
       <Name>StockTracking.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockTracking.Services\StockTracking.Services.csproj">
+      <Project>{767e1e44-6b54-4760-b711-54a6d6e89770}</Project>
+      <Name>StockTracking.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
