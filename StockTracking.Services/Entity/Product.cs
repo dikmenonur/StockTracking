@@ -12,6 +12,10 @@ namespace StockTracking.Core.Entity
     [Table("Product")]
     public class Product
     {
+        public Product()
+        {
+            this.StockProduct = new StockProduct();
+        }
         [Key]
         public long ID { get; set; }
 
