@@ -11,7 +11,7 @@ namespace StockTracking.Core.Entity
     public class Product
     {
         [DataMember]
-        public int ID;
+        public long ID;
 
         [DataMember]
         public string Code;

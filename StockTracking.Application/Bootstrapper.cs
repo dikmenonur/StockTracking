@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Business.Services;
-using Business.Services.Contracts;
 using StockTracking.Core.Repositories;
+using StockTracking.Services;
+using StockTracking.Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
