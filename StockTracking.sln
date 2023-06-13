@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracking.Core", "Stock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracking.Services", "StockTracking.Services\StockTracking.Services.csproj", "{767E1E44-6B54-4760-B711-54A6D6E89770}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{DFFF99F8-ED1C-412E-B518-7F539EFABB28}"
+	ProjectSection(SolutionItems) = preProject
+		SqlDatabase.sql = SqlDatabase.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
