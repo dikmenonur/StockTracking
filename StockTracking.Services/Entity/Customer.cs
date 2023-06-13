@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -8,10 +10,12 @@ using System.Threading.Tasks;
 namespace StockTracking.Core.Entity
 {
     [DataContract]
+    [Table("Customer")]
     public class Customer
     {
         [DataMember]
-        public int CustomerID;
+        [Key]
+        public long CustomerID;
 
         [DataMember]
         public string CustomerName;

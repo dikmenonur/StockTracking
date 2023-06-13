@@ -10,5 +10,12 @@ namespace StockTracking.Core.Repositories
     public interface IProductDataSource
     {
         Task<Product> GetById(long id);
+        Task<List<Product>> GetAll();
+        Task<Product> UpdateStockAsync(long id, int quantity);
+        Task<long> AddNewProductAsync(Product product);
+        Task<long> UpdateNewProductAsync(Product product);
+        Task<Product> SellProductAsync(long id, int quantity);
+        Task<bool> BulkInsertProductAsync(List<Product> products);
+
     }
 }

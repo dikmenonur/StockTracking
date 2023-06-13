@@ -12,9 +12,27 @@ namespace StockTracking.Services.Contracts
     public interface IProductService
     {
         [OperationContract]
-        void Add(Product article);
+        Task AddAsync(Product article);
 
         [OperationContract]
         Task<Product> GetProductAsync(int id);
+        
+        [OperationContract]
+        Task<List<Product>> GetProductAll();
+
+        [OperationContract]
+        Task<Product> UpdateStockAsync(long id, int quantity);
+
+        [OperationContract]
+        Task<long> AddNewProductAsync(Product product);
+
+        [OperationContract]
+        Task<long> UpdateNewProductAsync(Product product);
+        
+        [OperationContract] 
+        Task<Product> SellProductAsync(long id, int quantity);
+        
+        [OperationContract] 
+        Task<bool> BulkInsertProductAsync(List<Product> products);
     }
 }

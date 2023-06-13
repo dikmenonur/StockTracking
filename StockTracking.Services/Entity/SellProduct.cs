@@ -9,22 +9,21 @@ using System.Threading.Tasks;
 
 namespace StockTracking.Core.Entity
 {
-    [Table("Product")]
-    public class Product
+    [DataContract]
+    [Table("SellProduct")]
+    public class SellProduct
     {
+        [DataMember]
         [Key]
         public long ID { get; set; }
 
-        public string Code { get; set; }
+        [DataMember]
+        public long ProductId { get; set; }
 
-        public string Name { get; set; }
+        [DataMember]
+        public DateTime SellDate{ get; set; }
 
-        public string Desc { get; set; }
-
-        public decimal Amount { get; set; }
-
-        public DateTime CreateDate { get; set; }
-
-        public StockProduct StockProduct { get; set; }
+        [DataMember]
+        public long SellNumber { get; set; }
     }
 }

@@ -23,8 +23,41 @@ namespace StockTracking.Services
             return _productDataSource.GetById(id);
         }
 
-        public void Add(Product article)
+        public async Task AddAsync(Product product)
         {
+            await _productDataSource.AddNewProductAsync(product);
+        }
+
+        public async Task<List<Product>> GetProductAll()
+        {
+            return await _productDataSource.GetAll();
+        }
+
+        public async Task<Product> UpdateStockAsync(long id, int quantity)
+        {
+            return await _productDataSource.UpdateStockAsync(id, quantity);
+
+        }
+
+        public async Task<long> AddNewProductAsync(Product product)
+        {
+            return await _productDataSource.AddNewProductAsync(product);
+        }
+
+        public async Task<long> UpdateNewProductAsync(Product product)
+        {
+            return await _productDataSource.UpdateNewProductAsync(product);
+
+        }
+
+        public async Task<Product> SellProductAsync(long id, int quantity)
+        {
+            return await _productDataSource.SellProductAsync(id, quantity);
+        }
+
+        public async Task<bool> BulkInsertProductAsync(List<Product> products)
+        {
+            return await _productDataSource.BulkInsertProductAsync(products);
         }
     }
 }
